@@ -73,7 +73,8 @@ public class instapics {
             req= (JSONObject)req.get("edge_owner_to_timeline_media");
             JSONArray edges=(JSONArray)req.get("edges");
             int i=0;
-            String path="C:\\Users\\lenovo\\Desktop\\"+name;
+            String path= System.getProperty("user.home") + "/Desktop/"+name;
+
             File dir = new File(path);
     
     // attempt to create the directory here
